@@ -1,0 +1,250 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* Header / Hero */
+header {
+  background: url('/assets/eagle 1.jpg') center/cover no-repeat;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+header h1 {
+  font-size: 3rem;
+  
+}
+header p {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+/* About */
+.about {
+  padding: 3rem 1rem;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about p {
+  line-height: 1.6;
+}
+
+/* Gallery */
+section {
+  padding: 2rem 1rem;
+}
+section h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* Contact */
+.contact {
+  background: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.contact p {
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
+footer a {
+  color: #f39c12;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+}
+/* ===========================
+   Category Gallery Section
+   =========================== */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gallery img {
+  margin-left: 25px;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Back link on category pages */
+a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Style h2 titles */
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+/* ===========================
+   📱 Mobile Styles
+   =========================== */
+@media (max-width: 768px) {
+
+  header {
+    height: 50vh;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .about {
+    padding: 2rem 1rem;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+  }
+
+  section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .gallery img {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact p {
+    font-size: 0.95rem;
+  }
+
+  .whatsapp-button {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    padding: 6px 10px;
+  }
+}

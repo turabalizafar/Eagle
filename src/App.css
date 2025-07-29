@@ -21,10 +21,11 @@ header {
   align-items: center;
   color: white;
   text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  text-align: center;
+  padding: 0 1rem;
 }
 header h1 {
   font-size: 3rem;
-  
 }
 header p {
   font-size: 1.25rem;
@@ -55,19 +56,33 @@ section h2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 .gallery img {
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 .gallery img:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Contact */
@@ -114,63 +129,30 @@ footer a {
 .whatsapp-button:hover {
   background-color: #1ebe5d;
 }
-/* ===========================
-   Category Gallery Section
-   =========================== */
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 16px;
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.gallery img {
-  margin-left: 25px;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-.gallery-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Back link on category pages */
+/* Back link */
 a {
   text-decoration: none;
   color: #0077cc;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
-/* Optional: Style h2 titles */
+/* Section Headings */
 h2 {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
   color: #333;
-  height: fit-content;
-  width: fit-content;
-  margin: 0 auto;
   padding: 10px;
   background-color: #f0f0f0;
   border-radius: 8px;
+  width: fit-content;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
+
 /* ===========================
    📱 Mobile Styles
    =========================== */
@@ -178,7 +160,6 @@ h2 {
 
   header {
     height: 50vh;
-    text-align: center;
     padding: 1rem;
   }
 
@@ -190,20 +171,12 @@ h2 {
     font-size: 1rem;
   }
 
-  .about {
-    padding: 2rem 1rem;
-  }
-
   .about h2 {
     font-size: 1.5rem;
   }
 
   .about p {
     font-size: 0.95rem;
-  }
-
-  section {
-    padding: 1.5rem 0.5rem;
   }
 
   section h2 {
@@ -217,10 +190,12 @@ h2 {
   }
 
   .gallery img {
-    margin-left: 0;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 160px;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+    padding: 0.5rem;
   }
 
   .contact h2 {

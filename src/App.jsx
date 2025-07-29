@@ -4,7 +4,6 @@ import About from "./components/About";
 import CategoryGallery from "./components/CategoryGallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import WhatsAppButton from "./components/WhatsAppButton";
 import "./App.css";
 import CategoryPage from './components/CategoryPage';
 
@@ -40,7 +39,6 @@ const App = () => {
               </div>
               <Contact />
               <Footer />
-              <WhatsAppButton />
              
             </>
           }

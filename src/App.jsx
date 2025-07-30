@@ -5,7 +5,7 @@ import CategoryGallery from "./components/CategoryGallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
-import WhatsappButton from './components/WhatsAppButton';
+import WhatsappButton from './components/WhatsappButton';
 import CategoryPage from './components/CategoryPage';
 
 const App = () => {

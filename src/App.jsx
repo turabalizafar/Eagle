@@ -5,6 +5,7 @@ import CategoryGallery from "./components/CategoryGallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
+import WhatsappButton from './components/WhatsAppButton';
 import CategoryPage from './components/CategoryPage';
 
 const App = () => {
@@ -39,7 +40,7 @@ const App = () => {
               </div>
               <Contact />
               <Footer />
-             
+              <WhatsappButton />
             </>
           }
         />
